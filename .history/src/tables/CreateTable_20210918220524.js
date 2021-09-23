@@ -1,0 +1,19 @@
+import React, { useState } from "react";
+import { useHistory } from "react-router";
+import { createTable } from "../utils/api";
+
+export default function CreateTable() {
+  const [tableError, setTableError] = useState("");
+  const history = useHistory();
+  function submitHandler(table) {
+    createTable(table).then(history.push(`/dashboard`)).catch(setTableError);
+  }
+
+  function cancel() {
+      history.goBack();
+  }
+
+  return (<><h1>Seat The reservation to a new table</h1>
+  <table
+  </>);
+}
