@@ -23,7 +23,8 @@ function Layout() {
           className="col"
           style={{
             backgroundImage: `url(${resto})`,
-            color:"white"
+            backgroundSize: "inherit",
+            color: "white",
           }}
         >
           <Routes />
