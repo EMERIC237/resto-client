@@ -13,13 +13,13 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
+    "env-cmd": "^10.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4",
-    "env-cmd":"^10.1.0"
+    "react-scripts": "^4.0.1",
+    "web-vitals": "^0.2.4"
   },
   "scripts": {
     "build": "react-scripts build",
@@ -27,7 +27,7 @@
     "start": "react-scripts start",
     "start:development": "env-cmd -f .env.development npm-run-all -p watch-css start-js",
     "build:staging": "env-cmd -f .env.staging npm run-script build",
-    "heroku-postbuild":"npm run build:production",
+    "heroku-postbuild": "npm run build:production",
     "build:production": "env-cmd -f .env.production npm run build-css && react-scripts build",
     "test": "npx cross-env CI=true npm run test:run",
     "test:run": "run-s test:unit test:e2e",

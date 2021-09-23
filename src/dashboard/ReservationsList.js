@@ -89,7 +89,7 @@ function ReservationsList({ detailed, reservations }) {
     );
   }
   return (
-    <table className="table table-striped table-sm table-responsive-sm">
+    <table className="table table-striped table-sm table-responsive-sm" style={{color:"white"}}>
       <thead>
         <tr>
           <th scope="col">ID</th>
