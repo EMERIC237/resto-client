@@ -6,3 +6,7 @@
 .remove-all-margin {
   margin-bottom: 0 !important;
 }
+
+.main{
+  min-height: 100vh;
+}
